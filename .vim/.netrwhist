@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/Users/lidiyam/esdata'
+let g:netrw_dirhist_2='/Users/lidiyam/Developer/Twelper/react-native/ios'
+let g:netrw_dirhist_3='/Users/lidiyam/Developer/logstash-5.1.2/config'
