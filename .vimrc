@@ -1,4 +1,5 @@
-colorscheme badwolf         " awesome colorscheme
+set background=dark
+colorscheme solarized         " awesome colorscheme
 syntax enable
 set tabstop=4       " number of visual spaces per TAB
 set softtabstop=4   " number of spaces in tab when editing

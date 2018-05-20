@@ -1,9 +1,11 @@
 if [ -f `brew --prefix`/etc/bash_completion ]; then
 . `brew --prefix`/etc/bash_completion
 fi
-
 DEFAULT=$PS1
+#PS1='\u@\h:\w\$ '
+#PS1="\u:\w\$ "
 PS1="\[\033[37m\]\u:\w\$ "
+
 
 # Aliasing
 alias g++14="g++-5 -std=c++14"
@@ -18,10 +20,10 @@ shopt -s histappend
 export PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
 
 # Ruby
-export PATH="${HOME}/.rbenv/bin:${PATH}"
-if hash rbenv 2> /dev/null; then
-  eval "$(rbenv init -)"
-fi
+#export PATH="${HOME}/.rbenv/bin:${PATH}"
+#if hash rbenv 2> /dev/null; then
+#  eval "$(rbenv init -)"
+#fi
 
 # Python
 export PYENV_ROOT="${HOME}/.pyenv"
@@ -32,7 +34,8 @@ if which pyenv > /dev/null; then
    eval "$(pyenv virtualenv-init -)"
 fi
 
-# Spark
+# added by Anaconda3 4.2.0 installer
+# export PATH="/Users/lidiyam/anaconda3/bin:$PATH"
 #export SPARK_HOME="/Users/lidiyam/Developer/spark-2.1.0-bin-hadoop2.6"
 #export PATH=$SPARK_HOME/bin:$PATH
 
@@ -42,3 +45,7 @@ fi
 #export PYSPARK_DRIVER_PYTHON=jupyter
 #export PYSPARK_DRIVER_PYTHON_OPTS='notebook'
 
+#eval "$(pyenv init -)"
+#eval "$(pyenv virtualenv-init -)"
+
+#eval "$(rbenv init -)"
